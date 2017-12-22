@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder</title>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- Jquery -->
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <!-- Font Awesome Glyphicons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+    <link rel="shortcut icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Ei-sc-facebook.svg/768px-Ei-sc-facebook.svg.png">
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="jumbotron">
+            <h1>Friend Finder Survey Page <i class="fa fa-thumbs-o-up" aria-hidden="true"></i></h1>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Survey Page-->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Answer the questions based on your personality.</h2>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Name (Required)</h4>
+                        <input type="text" name="" id="name" class="form-control" required>
+                        <h4>Link to Photo Image (Required)</h4>
+                        <input type="text" name="" id="photo" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feature-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3><strong>Question 1</strong></h3>
+                    <h4>You are a dog person.</h4>
+                    <select data-placeholder="" class="chosen-select" id="q1">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neither Agree nor Disagree)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h3><strong>Question 2</strong></h3>
+                    <h4>You consider yourself a "home-body."</h4>
+                    <select data-placeholder="" class="chosen-select" id="q2">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neither Agree nor Disagree)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h3><strong>Question 3</strong></h3>
+                    <h4>You are in control of your emotions most of the time.</h4>
+                    <select data-placeholder="" class="chosen-select" id="q3">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neither Agree nor Disagree)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h3><strong>Question 4</strong></h3>
+                    <h4>You only take well-planned vacations with an itinerary that accounts for all of the time you expect to be in a given location.</h4>
+                    <select data-placeholder="" class="chosen-select" id="q4">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neither Agree nor Disagree)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h3><strong>Question 5</strong></h3>
+                    <h4>You frequently travel to music festivals.</h4>
+                    <select data-placeholder="" class="chosen-select" id="q5">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neither Agree nor Disagree)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h3><strong>Question 6</strong></h3>
+                    <h4>You enjoy a good cocktail.</h4>
+                    <select data-placeholder="" class="chosen-select" id="q6">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neither Agree nor Disagree)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h3><strong>Question 7</strong></h3>
+                    <h4>You are well-versed in political discourse and are upset when you learn that a friend or relative did not vote.</h4>
+                    <select data-placeholder="" class="chosen-select" id="q7">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neither Agree nor Disagree)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h3><strong>Question 8</strong></h3>
+                    <h4>Most people are not very smart.</h4>
+                    <select data-placeholder="" class="chosen-select" id="q8">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neither Agree nor Disagree)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h3><strong>Question 9</strong></h3>
+                    <h4>ESPN is your favorite channel and you are involved in multiple fantasy sports leagues.</h4>
+                    <select data-placeholder="" class="chosen-select" id="q9">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neither Agree nor Disagree)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h3><strong>Question 10</strong></h3>
+                    <h4>  You are annoyed by the "resolutioners" congesting the gym during January that are most likely not going to be around in March.</h4>
+                    <select data-placeholder="" class="chosen-select" id="q10">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2 (Disagree)</option>
+                        <option value="3">3 (Neither Agree nor Disagree)</option>
+                        <option value="4">4 (Agree)</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+                
+                <div class='row'>
+                    <button type="submit" class="btn btn-primary submit" id="myBtn">Submit</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style type="text/css">
+.jumbotron {
+    background-color: #4267b2;
+    color: whitesmoke;
+}
+
+hr {
+    border-top: 2px solid whitesmoke;
+}
+
+.feature-wrapper {
+    border-radius: 5px;
+    background-color: gray;
+    color: whitesmoke;
+    margin-bottom: 40px;
+}
+
+.row {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+h2, h3 {
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+h1 {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+.btn {
+        margin: 20px 0;
+        padding: 10px 35px;
+        overflow: hidden;
+    }
+
+ #photo {
+        margin-bottom: 40px;
+    }
+</style>
