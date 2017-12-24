@@ -6,13 +6,11 @@ module.exports = function(app) {
 
 	// API GET Request
 	app.get("/api/friends", function(req, res) {
-		
-		return res.json(friendsList);
+		res.json(friendsList);
 	});
 
 	// API POST Request
 	app.post("/api/friends", function(req, res) {
-		
 		var newFriend = req.body;
 		var friendListScoreCard = [];
 
@@ -20,7 +18,7 @@ module.exports = function(app) {
 			var differenceScore = 0;
 			for (j = 0; j < 10; j++) {
 
-				var userScoreCard = newFriend['surveyResponses[]'];
+				var userScoreCard = newFriend["surveyResponses[]"];
 				var friendScoreCard = friendsList[i].surveyResponses;
 
 				differenceScore += Math.abs(parseInt(userScoreCard[j]) - friendsList[i].surveyResponses[j]);
@@ -39,6 +37,7 @@ module.exports = function(app) {
 				}
 				res.send(bestFriend);
 			};
+			
 		};
 		friendsList.push(req.body);
 	});

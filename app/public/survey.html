@@ -137,11 +137,10 @@
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary btn-lg btn-block submit" id="myBtn"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit</button>
-                </form>
             </div>
         </div>
         <footer class="footer">
-            <a href="api/friends">API Friends List | </a><a href="https://github.com/raphatapi/FriendFinder" target="_blank" class="text-center" id="git">Github Repo</a>
+            <a href="api/friends">API Friends List</a><span> | </span><a href="https://github.com/raphatapi/FriendFinder" target="_blank" class="text-center" id="git">Github Repo</a>
         </footer>
     </div>
 </body>
@@ -175,7 +174,7 @@
 
                 $(".nameModal").text(data.newFriendName);
                 $(".modalPhoto").attr("src", data.newFriendPhoto);
-                $(".modalPhoto").attr("height", '400px');
+                $(".modalPhoto").attr("height", 'auto');
                 $(".modalPhoto").attr("width", 'auto');
 
             });
