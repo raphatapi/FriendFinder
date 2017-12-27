@@ -1,44 +1,32 @@
-var friendsList = require("../data/friends.js");
+var friend = require("../data/friends.js");
 
 module.exports = function(app) {
 
-	// ============================ API Routes============================
-
-	// API GET Request
 	app.get("/api/friends", function(req, res) {
-		res.json(friendsList);
+		res.json(friend);
 	});
 
-	// API POST Request
 	app.post("/api/friends", function(req, res) {
-		var newFriend = req.body;
-		var friendListScoreCard = [];
+		var newClient = req.body;
+		var myScore = newClient.scores;
+		var total = 0;
+        var bestMatch = 100;
+        var index = -1;
 
-		for (i = 0; i < friendsList.length; i++) {
-			var differenceScore = 0;
-			for (j = 0; j < 10; j++) {
-
-				var userScoreCard = newFriend["surveyResponses[]"];
-				var friendScoreCard = friendsList[i].surveyResponses;
-
-				differenceScore += Math.abs(parseInt(userScoreCard[j]) - friendsList[i].surveyResponses[j]);
-			}
-			friendListScoreCard.push(differenceScore);
-		}
-
-		var min = Math.min.apply(null, friendListScoreCard);
-		for (k = 0; k < friendListScoreCard.length; k++) {
-			if (friendListScoreCard[k] == min) {
-				var newFriendName = friendsList[k].name;
-				var newFriendPhoto = friendsList[k].photoURL;
-				var bestFriend  = {
-					newFriendName: newFriendName,
-					newFriendPhoto: newFriendPhoto
-				}
-				res.send(bestFriend);
-			};
+		for(var j = 0; j < friend.length; j++){
+            total = 0;
+            for(var i = 0; i < myScore.length; i++) {
+				var dif = Math.abs(myScore[i] - friend[j].scores[i]);
+				total += dif;
+            };
 			
-		};
-		friendsList.push(req.body);
+            if (total < bestMatch) {
+                bestMatch = total;
+                index = j;
+            };
+        };
+		// console.log('best Choice', friend[index]);
+        friend.push(newClient);
+        res.json(friend[index]);
 	});
 };
