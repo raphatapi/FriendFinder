@@ -25,7 +25,6 @@ module.exports = function(app) {
                 index = j;
             };
         };
-		// console.log('best Choice', friend[index]);
         friend.push(newClient);
         res.json(friend[index]);
 	});
