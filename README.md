@@ -4,7 +4,7 @@
 
 ## Live Link
 
-- https://jn-friend-finder.herokuapp.com/
+- https://match-friend.herokuapp.com/
 
 ## Technologies
 
@@ -19,7 +19,6 @@
 - Download
 ```
 git clone https://github.com/raphatapi/FriendFinder.git
-
 ```
 
 - Install Modules
@@ -31,7 +30,6 @@ $ npm install
 
 ```
 $ node server.js   
-
 ```
 
 ## How it works
