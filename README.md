@@ -36,12 +36,12 @@ $ node server.js
 
 - Home Page 
 
-![FFHome Pic](ffhome.png)
+![FFHome Pic](/img/ffhome.png)
 
 - Answer survey 
 
-![FFSurvey Pic](ffsurvey.png)
+![FFSurvey Pic](/img/ffsurvey.png)
 
 - FriendFinder will then choose your best match 
 
-![FFMatch Pic](ffmatch.png)
+![FFMatch Pic](/img/ffmatch.png)
